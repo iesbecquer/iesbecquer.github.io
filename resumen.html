@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Resumen</title>
+        
+        <style>
+            .muestra {
+                padding: 15px;
+                border: 1px solid black;
+                border-left-color: dodgerblue;
+                border-left-width: 10px;
+                border-radius: 5px;
+            }
+            
+            #derecha {
+                float
+            }
+            
+            h2 {
+                background-color: lightblue;
+                border-radius: 5px;
+                padding: 15px;
+            }
+            
+            h2#indice {
+                background-color: lightsalmon;
+                color: white
+            }
+            
+            body {
+                width: 50%;
+                margin: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Resumen de etiquetas HTML</h1>
+        <!-- Antes de este comentario no tienes que tocar nada. -->
+        
+
+        <h2 id="indice">Índice</h2>
+        <ol>
+            <li><a href="#parrafo">Párrafos.</a></li>
+            <li><a href="#saltolinea">Saltos de línea.</a></li>
+            <li><a href="#imagen">Imágenes.</a></li>
+            <li><a href="#enlace">Enlaces.</a></li>
+        </ol>
+        
+        
+        <!-- A partir de aquí no tienes que modificar nada.
+             Sin embargo, sí tendrás que buscar los identificadores para poder
+             construir el índice -->
+        <div id="centro">
+            <div>
+                <h2 id="parrafo">Etiqueta párrafo: &lt;p&gt;···&lt;/p&gt;</h2>
+                <p>Sirve para crear un párrafo de texto.</p>
+                <p>Ejemplo:</p>
+                <pre class="muestra">&lt;p&gt;Esto es un primer párrafo.&lt;/p&gt;
+    &lt;p&gt;Esto es un segundo párrafo.&lt;/p&gt;</pre>
+                <p>Tiene como salida:</p>
+                <div class="muestra">
+                    <p>Esto es un primer párrafo.</p>
+                    <p>Esto es un segundo párrafo.</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="saltolinea">Etiqueta salto de línea: &lt;br&gt;</h2>
+                <p>Sirve para forzar que termine una línea y comience desde la izquierda en otro renglón.</p>
+                <p><strong>Esta etiqueta no hay que cerrarla.</strong></p>
+                <p>Ejemplo:</p>
+                <pre class="muestra">&lt;p&gt;Esto es una primera línea.&lt;br&gt;
+    Esto es una segunda línea.&lt;/p&gt;</pre>
+                <p>Tiene como salida:</p>
+                <div class="muestra">
+                    <p>Esto es un primer párrafo.<br>
+                    Esto es un segundo párrafo.</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h2 id="imagen">Etiqueta para introducir imágenes:  &lt;img src="···"&gt;···&lt;/img&gt;</h2>
+                <p>Introduce una imagen en la página web.</p>
+                <p>Tiene una serie de atributos que hay que conocer, como son:</p>
+                <ul>
+                    <li><em>src</em>: Dirección donde se encuentra la imagen. Es obligatorio ponerlo.</li>
+                    <li><em>width</em>: ancho de la imagen. Es opcional.</li>
+                    <li><em>height</em>: alto de la imagen. Es opcional.</li>
+                    <li><em>alt</em>: descripción de la imagen. Es opcional.</li>
+                </ul>
+
+                <p><strong>Esta etiqueta no hay que cerrarla.</strong></p>
+                <p>Ejemplo:</p>
+                <pre class="muestra">&lt;img src=&#34;https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png&#34;&gt;</pre>
+                <p>Tiene como salida:</p>
+                <div class="muestra">
+                    <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+            </div>
+
+            <div>
+                <h2 id="enlace">Etiqueta para introducir enlaces:  &lt;a href"···"&gt;···&lt;/a&gt;</h2>
+                <p>Introduce un enlace en la página web.</p>
+                <p>Tiene una serie de atributos que hay que conocer, como son:</p>
+                <ul>
+                    <li><em>href</em>: Dirección web que se carga al hacer clic en el enlace.</li>
+                </ul>
+
+                <p>Ejemplo:</p>
+                <pre class="muestra">&lt;a href=&#34;https://www.google.com&#34;&gt;Enlace a Google.&lt;/a&gt;</pre>
+                <p>Tiene como salida:</p>
+                <div class="muestra">
+                    <a href="http://www.google.com">Enlace a Google</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
